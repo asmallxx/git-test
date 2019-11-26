@@ -18,6 +18,7 @@ export default {
     };
   },
   //测试git
+  //修改第二次
   methods: {
     childmsg(e) {
       alert(e);
