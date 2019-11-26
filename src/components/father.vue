@@ -17,6 +17,7 @@ export default {
       fathersay: ""
     };
   },
+  //测试git
   methods: {
     childmsg(e) {
       alert(e);
