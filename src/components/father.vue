@@ -7,6 +7,8 @@
 </template>
 <script>
 import child from "@/components/child";
+import { status, a } from "@/js/common";
+import global from "@/components/template/global";
 export default {
   name: "father",
   components: {
@@ -14,7 +16,8 @@ export default {
   },
   data() {
     return {
-      fathersay: ""
+      fathersay: "",
+      userSite: global.userSite
     };
   },
   //测试git
@@ -24,6 +27,13 @@ export default {
     childmsg(e) {
       alert(e);
     }
+  },
+  //测试全局变量；
+  created() {
+    console.log(status);
+    a();
+    console.log(global.token);
+    console.log(this.userSite);
   }
 };
 </script>

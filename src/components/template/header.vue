@@ -2,14 +2,6 @@
   <section class="common-header">
     <div class="topic">
       <span class="current-topic">{{topic}}</span>
-      <!-- <nav class="topic-select" @click.stop="showTopics = !showTopics">
-        [切换题型]
-        <ul class="topic-list" v-show="showTopics">
-          <li v-for="(item,index) in routers" :key="index">
-            <router-link :to="item.path+query" replace>{{item.label}}</router-link>
-          </li>
-        </ul>
-      </nav>-->
     </div>
     <span class="back-btn" @click="close">返回</span>
   </section>
